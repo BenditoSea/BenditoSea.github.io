@@ -4,101 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bendito Sea</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body{
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .navbar{
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 60px;
-            width: 100%;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px); /* Efecto de desenfoque */
-        }
-        .navbar ul{
-            display: flex;
-            list-style: none;
-            padding: 0%;
-        }
-        .navbar li{
-            margin: 0 15px;
-        }
-        .navbar a{
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: large;
-            display: block;
-            padding: 0 2.5em;
-            transition: .4s;
-        }
-        nav a:hover{ /*casilla al pasar el raton*/
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        .head-img{
-            background-image: url('https://scontent.fbog16-2.fna.fbcdn.net/v/t39.30808-6/459698212_906898081458668_8069203658548264301_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=44OsLcgDWzoQ7kNvgHu1Z8q&_nc_zt=23&_nc_ht=scontent.fbog16-2.fna&_nc_gid=AAZXctPXG9Swf-HeKvL0PiD&oh=00_AYBKIqk5OR_vjEasE-ol3JOVxyK6yJCreUK1tzpj_-z1LQ&oe=6728BCBB');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            position: relative;
-            color: #fff;
-        }
-        .head-text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        .head-img h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .head-img p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .btn{
-            padding: 10px 20px;
-            background-color: #ff6347;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        #services{
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-            background-color: #e9e9e9;
-        }
-
-        .service{
-            text-align: center;
-            width: 30%;
-        }
-
-        .service h2{
-            font-size: 24px;
-            color: #ff6347;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
      <header class="head-img">
@@ -120,22 +26,26 @@
     <!--Actividades y servicios-->
     <section id="services">
         <div class="service">
+            <img src="https://img.freepik.com/foto-gratis/vista-formaciones-rocosas-paisaje-natural_23-2151723150.jpg" alt="">
             <h2>Escalada en roca</h2>
             <p>Desafía tus límites con nuestras rutas de escalada.</p>
             <br><a href="#" class="btn">Ver más</a>
         </div>
         <div class="service">
+            <img src="https://img.freepik.com/foto-gratis/vista-formaciones-rocosas-paisaje-natural_23-2151723150.jpg" alt="">
             <h2>Bulder</h2>
             <p>Subete al bloque.</p>
             <br><a href="#" class="btn">Ver más</a>
         </div>
         <div class="service">
+            <img src="https://img.freepik.com/foto-gratis/vista-formaciones-rocosas-paisaje-natural_23-2151723150.jpg" alt="">
             <h2>Camping</h2>
             <p>Experimenta la tranquilidad de acampar en la naturaleza.</p>
             <br><a href="#" class="btn">Ver más</a>
             
         </div>
         <div class="service">
+            <img src="https://img.freepik.com/foto-gratis/vista-formaciones-rocosas-paisaje-natural_23-2151723150.jpg" alt="">
             <h2>Caminatas</h2>
             <p>Realiza caminatas ecologicas con los guias locales.</p>
             <br><a href="#" class="btn">Ver más</a>
@@ -143,13 +53,39 @@
     </section>
 
     <!--Ubicacion-->
-    <section id="Ubicacion">
-        <p>Via Bogota-Choachi Ruta 4006A Pr6+100 Perimetral oriental</p>
+    <section class="location">
+        <h2>Encuéntranos</h2>
+        <p>Estamos ubicados en la Via Bogota-Choachi Ruta 4006A Pr 6+100 Perimetral oriental</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9196561941083!2d-122.084!3d37.421999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb07e7e4e3bb%3A0x29d70412c3b7a19b!2sMountain%20Adventure!5e0!3m2!1ses!2s!4v1602179715123!5m2!1ses!2s" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
     </section>
 
     <!--Contacto-->
-    <section id="Contacto">
-        <p>contacto:</p>
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas o deseas más información? ¡Envíanos un mensaje!</p>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+    
+    
+
+    <section>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
     </section>
 </body>
 </html>
