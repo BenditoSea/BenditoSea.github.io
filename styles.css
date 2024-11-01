@@ -8,6 +8,10 @@
         width: 100%;
         margin: 40px;
     }
+    .contact-info {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 /*Pantallas grandes*/
@@ -42,6 +46,7 @@ h2{
     margin-bottom: 20px;
 }
 
+/*Menu*/
 .navbar{
     position: fixed;
     top: 0;
@@ -50,7 +55,7 @@ h2{
     width: 100%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    backdrop-filter: blur(10px); 
     z-index: 3;
 }
 .navbar ul{
@@ -71,18 +76,31 @@ h2{
     padding: 0 2.5em;
     transition: .4s;
 }
-nav a:hover{ /*casilla al pasar el raton*/
+nav a:hover{
     background: rgba(0, 0, 0, 0.5);
 }
 
-.head-img{
-    background-image: url('https://scontent.fbog16-2.fna.fbcdn.net/v/t39.30808-6/459698212_906898081458668_8069203658548264301_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=44OsLcgDWzoQ7kNvgHu1Z8q&_nc_zt=23&_nc_ht=scontent.fbog16-2.fna&_nc_gid=AAZXctPXG9Swf-HeKvL0PiD&oh=00_AYBKIqk5OR_vjEasE-ol3JOVxyK6yJCreUK1tzpj_-z1LQ&oe=6728BCBB');
+/*Imagen en Header*/
+header{
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
     color: #fff;
 }
+.head-img{/*Header en Index*/
+    background-image: url('https://scontent.fbog16-2.fna.fbcdn.net/v/t39.30808-6/459698212_906898081458668_8069203658548264301_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=44OsLcgDWzoQ7kNvgHu1Z8q&_nc_zt=23&_nc_ht=scontent.fbog16-2.fna&_nc_gid=AAZXctPXG9Swf-HeKvL0PiD&oh=00_AYBKIqk5OR_vjEasE-ol3JOVxyK6yJCreUK1tzpj_-z1LQ&oe=6728BCBB');
+}
+.head-img2{/*Header Camping*/
+    background-image: url('');
+}
+.head-img3{/*Header Mas actividades*/
+    background-image: url('');
+}
+.head-img4{/*Header ubicacion*/
+    background-image: url('');
+}
+
 .head-text{
     position: absolute;
     top: 50%;
@@ -90,12 +108,12 @@ nav a:hover{ /*casilla al pasar el raton*/
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.head-img h1 {
+header h1{
     font-size: 48px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px black;
 }
-.head-img p {
+header p{
     font-size: 18px;
     margin-bottom: 30px;
     text-shadow: 2px 2px 1px black;
@@ -121,7 +139,14 @@ nav a:hover{ /*casilla al pasar el raton*/
     text-align: center;
 }
 .service img{
-    width: 80%;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .service h2{
     font-size: 24px;
@@ -149,30 +174,39 @@ nav a:hover{ /*casilla al pasar el raton*/
     color: #333;
     margin-bottom: 30px;
 }
-.contact-form{
-    max-width: 600px;
+
+.contact-card{
+    max-width: 700px;
+    padding: 20px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
-.contact-form button{
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-.contact-form button:hover{
-    background-color: #e5533d;
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-item i{
+    font-size: 1.2em;
+    color: #e5533d;
+}
+.contact-item a{
+    color: #e5533d;
+    text-decoration: none;
+}
+.contact-item a:hover{
+    text-decoration: underline;
+    color: #007bff;
 }
