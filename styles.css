@@ -98,6 +98,9 @@ header{
     color: #fff;
 }
 .head-img{/*Header en Index*/
+    background-image: url('https://image.thecrag.com/592x320/95/52/9552c6e645c89a0e83a57afb669d74b0fe986c76');
+}
+.head-img1{/*Header Camping*/
     background-image: url('https://scontent.fbog16-2.fna.fbcdn.net/v/t39.30808-6/459698212_906898081458668_8069203658548264301_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=44OsLcgDWzoQ7kNvgHu1Z8q&_nc_zt=23&_nc_ht=scontent.fbog16-2.fna&_nc_gid=AAZXctPXG9Swf-HeKvL0PiD&oh=00_AYBKIqk5OR_vjEasE-ol3JOVxyK6yJCreUK1tzpj_-z1LQ&oe=6728BCBB');
 }
 .head-img2{/*Header Camping*/
@@ -217,4 +220,103 @@ header p{
 .contact-item a:hover{
     text-decoration: underline;
     color: #007bff;
+}
+
+.bendito-sea{
+    position: relative;
+    display: inline-block;
+}
+
+.bendito-sea img {
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bendito-sea:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bendito-sea .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    pointer-events: none; /* Permite que el clic pase a la imagen/enlace debajo */
+}
+
+.bendito-sea:hover .overlay {
+    opacity: 1;
+}
+
+table, th, td {
+    border: none;
+}
+
+#table-route{
+    width: 360px; 
+    margin: 0 auto; /* centra el contenedor de la tabla */
+
+}
+
+tr{
+    height: 20px;
+}
+tr:hover{
+    transform: scale(1.1);
+}
+
+/* Columna 1*/
+.clr1 {
+    width: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Columna 2*/
+.clr2{
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.clr2b{
+    background-color: red;
+    color: white;
+}
+.clr2w{
+    background-color: white;
+}
+.clr2a{
+    background-color: yellow;
+    color: black;
+}
+.clr2n{
+    background-color: rgb(226, 147, 0);
+    color: black;
+}
+
+/* Columna 3*/
+.clr3 {
+    color: yellow;
+    text-align: left;
+    font-size: 1.1em;
+    width: auto;
+}
+
+/* Columna 4*/
+.clr4 {
+    color: rgb(0, 0, 180);
+    text-align: left;
 }
