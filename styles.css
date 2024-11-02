@@ -44,9 +44,15 @@ section{
 }
 
 h2{
-    font-size: 28px;
+    font-size: 30px;
     color: #ff6347;
     margin-bottom: 20px;
+}
+
+h3{
+    font-size: 24px;
+    color: #d63215;
+    margin-bottom: 10px;
 }
 
 /*Menu*/
@@ -153,10 +159,6 @@ header p{
 .service img:hover{
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-.service h2{
-    font-size: 24px;
-    margin-bottom: 10px;
 }
 
 #location, #bendito-sea{
