@@ -255,7 +255,7 @@ header p{
     pointer-events: none; /* Permite que el clic pase a la imagen/enlace debajo */
 }
 
-.bendito-sea:hover .overlay {
+.bendito-sea:hover .overlay{
     opacity: 1;
 }
 
@@ -333,8 +333,11 @@ tr:hover{
 .gallery-item {
     overflow: hidden;
     border-radius: 5px;
-
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
+
 
 .gallery-item img,.gallery-item source{
     width: 100%;
@@ -344,4 +347,25 @@ tr:hover{
 
 .gallery-item img:hover {
     transform: scale(1.05);
+}
+
+.gallery-item:hover .overlay-img{
+    opacity: 1;
+}
+
+.overlay-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
 }
