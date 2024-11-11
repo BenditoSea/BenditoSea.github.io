@@ -164,7 +164,7 @@ header p{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-#location, #bendito-sea{
+#location, #bendito-sea, #Mapa{
     padding: 50px 20px;
     text-align: center;
     background-color: #f4f4f4;
@@ -330,14 +330,13 @@ tr:hover{
     padding: 20px;
 }
 
-.gallery-item {
+.gallery-item{
     overflow: hidden;
     border-radius: 5px;
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
-
 
 .gallery-item img,.gallery-item source{
     width: 100%;
