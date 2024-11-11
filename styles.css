@@ -368,3 +368,7 @@ tr:hover{
     justify-content: center;
     gap: 5px; /* Espacio entre el icono y el texto */
 }
+
+#Mapa img{
+    width: 50%;
+}
