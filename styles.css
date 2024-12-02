@@ -100,11 +100,12 @@ header{
 .head-img{/*Header en Index*/
     background-image: url('https://image.thecrag.com/592x320/95/52/9552c6e645c89a0e83a57afb669d74b0fe986c76');
 }
-.head-img1{/*Header Camping*/
-    background-image: url('https://benditosea.github.io/Img/Galeria/Img15.jpg');
+.head-img1{/*Header Escalada*/
+    background-image: url('');
 }
 .head-img2{/*Header Camping*/
-    background-image: url('');
+    background-image: url('https://benditosea.github.io/Img/Galeria/Img32.jpg');
+    background-size: cover;
 }
 .head-img3{/*Header Mas actividades*/
     background-image: url('');
@@ -164,7 +165,7 @@ header p{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-#location, #bendito-sea, #Mapa{
+#location, #bendito-sea, #Mapa,.galeria{
     padding: 50px 20px;
     text-align: center;
     background-color: #f4f4f4;
@@ -175,7 +176,7 @@ header p{
     margin-bottom: 30px;
 }
 
-#contact,#boulder,#cost{
+#contact,#boulder,#cost,#servicios-camping,#faq-camping{
     padding: 50px 20px;
     text-align: center;
     background-color: #e9e9e9;
@@ -371,4 +372,10 @@ tr:hover{
 
 #Mapa img{
     width: 40%;
+}
+
+
+#map {
+    height: 600px;
+    width: 100%;
 }
