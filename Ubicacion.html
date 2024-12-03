@@ -3,107 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mapa Interactivo</title>
-  <style>
-    #map {
-      position: relative;
-      width: 600px;
-      height: 400px;
-      background: url('Mapa-.png') no-repeat center center;
-      background-size: cover;
-      border: 2px solid #000;
-    }
-    .point {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background-color: rgb(255, 255, 255);
-      border: 3px solid rgb(255, 0, 0);
-      border-radius: 50%;
-      cursor: pointer;
-      transform: translate(-50%, -50%);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease, background-color 0.2s ease;
-    }
-
-    .point::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 10px solid red;
-      transform: translateX(-50%);
-    }
-
-    .point:hover {
-      transform: translate(-50%, -50%) scale(1.2);
-      background-color: darkred;
-    }
-
-    #modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 80%;
-      height: 70%;
-      background-color: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      border-radius: 8px;
-      transform: translate(-50%, -50%);
-      display: none; /* Oculto inicialmente */
-      z-index: 1000;
-      padding: 10px;
-    }
-
-    #modal iframe {
-      width: 100%;
-      height: 90%;
-      border: none;
-    }
-
-    #modal button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: red;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-  </style>
+  <title>Mapa - Bendito Sea</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="map">
-    <div class="point" style="top: 3%; left: 58%;" onclick="handlePointClick('panoramica.html')"></div>
-    <div class="point" style="top: 46%; left: 46%;" onclick="handlePointClick('Baño.html')"></div>
-    <div class="point" style="top: 53%; left: 45%;" onclick="handlePointClick('Camping.html')"></div>
-    <div class="point" style="top: 76%; left: 32%;" onclick="handlePointClick('Muro.html')"></div>
-    <div class="point" style="top: 65%; left: 47%;" onclick="handlePointClick('Boulder.html')"></div>
+  <header class="head-img3">
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://benditosea.github.io/">Inicio</a></li>
+            <li><a href="https://benditosea.github.io/#services">Actividades</a></li>
+            <li><a href="https://benditosea.github.io/#location">Ubicación</a></li>
+            <li><a href="https://benditosea.github.io/#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--<div class="head-text">
+        <h1>Titulo</h1>
+        <p>Texto</p>
+        <a href="#services" class="btn">Ver mas</a>
+    </div-->
+  </header>
+  <br><br>
+
+  <div id="map-container">
+    <div id="map"><!--Puntos en el mapa-->
+      <div class="point" style="top: 3%; left: 78%;" onclick="handlePointClick('panoramica.html')"><span class="point-label">Entrada</span></div><!--Entrada-->
+      <div class="point" style="top: 47%; left: 46%;" onclick="handlePointClick('Baño.html')"><span class="point-label">Baño</span></div><!--Baño-->
+      <div class="point" style="top: 53%; left: 43%;" onclick="handlePointClick('Camping.html')"><span class="point-label">Camping</span></div><!--Camping-->
+      <div class="point" style="top: 86%; left: 22%;" onclick="handlePointClick('Escalada_en_roca.hmtl#bendito-sea')"><span class="point-label">Muro Bendito sea</span></div><!--Bendito sea-->
+      <div class="point" style="top: 65%; left: 49%;" onclick="handlePointClick('Escalada_en_roca.html#boulder')"><span class="point-label">Boulder</span></div><!--Boulder-->
+    </div>
+  
+    <div id="modal"><!--Ventana emergente-->
+      <button onclick="closeModal()">X</button>
+      <iframe id="modal-iframe" src=""></iframe>
+    </div>
   </div>
 
-  <div id="modal">
-    <button onclick="closeModal()">X</button>
-    <iframe id="modal-iframe" src=""></iframe>
-  </div>
+  <iframe
+    src="pagina-en-construccion.html" 
+    width="100%" 
+    height="500" 
+    style="border: none; overflow: hidden;"
+    loading="lazy">
+  </iframe>
 
   <script>
     const modal = document.getElementById('modal');
     const iframe = document.getElementById('modal-iframe');
 
     function handlePointClick(page) {
-      iframe.src = page; // Carga la página correspondiente en el iframe
-      modal.style.display = 'block'; // Muestra el modal
+      iframe.src = page;
+      modal.style.display = 'block'; 
     }
 
     function closeModal() {
-      modal.style.display = 'none'; // Oculta el modal
-      iframe.src = ''; // Limpia el contenido del iframe
+      modal.style.display = 'none'; 
+      iframe.src = '';
     }
   </script>
 </body>
