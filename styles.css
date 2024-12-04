@@ -382,7 +382,7 @@ tr:hover{
     position: relative;
     width: 320px;
     height: 561px;
-    background: url('/Img/Mapa.png') no-repeat center center;
+    background: url('https://benditosea.github.io/Img/Mapa.png') no-repeat center center;
     background-size: cover;
     border: 2px solid #000;
 }
