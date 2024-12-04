@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Incluir los estilos de Pannellum -->
   <link href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" rel="stylesheet" />
   <style>
     html, body {
@@ -22,14 +21,15 @@
   <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
   <script>
     pannellum.viewer('panorama', {
-      type: 'equirectangular',   // Cambiar a proyección esférica (es más flexible)
-      panorama: 'https://benditosea.github.io/Img/Panoramicas/Panoramica01.png', // Imagen panorámica
+      type: 'equirectangular',         // Proyección estándar
+      panorama: 'https://benditosea.github.io/360/Imagenes/Camping.jpeg',
       autoLoad: true,
-      hfov: 100,                // Campo de visión horizontal (puedes ajustar este valor)
-      vOffset: 0,               // Asegurar que esté centrado
-      maxPitch: 45,             // Limitar inclinación hacia arriba
-      minPitch: -45,            // Limitar inclinación hacia abajo
-      showZoomCtrl: true,
+      hfov: 150,                      // Ajusta el campo de visión horizontal
+      minPitch: -20,                  // Limita inclinación hacia abajo
+      maxPitch: 20,                   // Limita inclinación hacia arriba
+      vOffset: 0,                     // Centra la imagen verticalmente
+      showZoomCtrl: true,             // Controles de zoom visibles
+      dynamic: false,                 // Imagen estática
     });
   </script>
 </body>
