@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #panorama {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="panorama"></div>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <script>
+    pannellum.viewer('panorama', {
+      type: 'equirectangular',         // Proyección estándar
+      panorama: 'https://benditosea.github.io/360/Imagenes/Boulder.jpg',
+      autoLoad: true,
+      hfov: 150,                      // Ajusta el campo de visión horizontal
+      minPitch: -20,                  // Limita inclinación hacia abajo
+      maxPitch: 20,                   // Limita inclinación hacia arriba
+      vOffset: 0,                     // Centra la imagen verticalmente
+      showZoomCtrl: true,             // Controles de zoom visibles
+      dynamic: false,                 // Imagen estática
+    });
+  </script>
+</body>
+</html>
