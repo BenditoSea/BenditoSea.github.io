@@ -16,30 +16,46 @@
             <li><a href="https://benditosea.github.io/#contact">Contacto</a></li>
         </ul>
     </nav>
-    <!--<div class="head-text">
-        <h1>Titulo</h1>
-        <p>Texto</p>
-        <a href="#services" class="btn">Ver mas</a>
-    </div-->
+    <div class="head-text">
+        <h1>Encuentranos</h1>
+        <p>Via Bogota-Choachi Ruta 4006A Pr 6+100 Perimetral oriental</p>
+        <a href="#location" class="btn">Ver mas</a>
+    </div>
   </header>
   <br><br>
 
-  <div id="map-container">
-    <div id="map"><!--Puntos en el mapa-->
-      <div class="point" style="top: 3%; left: 78%;" onclick="handlePointClick('https://benditosea.github.io/360/Entrada.html')"><span class="point-label">Entrada</span></div><!--Entrada-->
-      <div class="point" style="top: 47%; left: 46%;" onclick="handlePointClick('https://benditosea.github.io/360/Camping.html')"><span class="point-label">Baño</span></div><!--Baño-->
-      <div class="point" style="top: 53%; left: 43%;" onclick="handlePointClick('https://benditosea.github.io/360/Camping.html')"><span class="point-label">Camping</span></div><!--Camping-->
-      <div class="point" style="top: 86%; left: 22%;" onclick="handlePointClick('https://benditosea.github.io/360/Muro.html')"><span class="point-label">Muro Bendito sea</span></div><!--Bendito sea-->
-      <div class="point" style="top: 65%; left: 49%;" onclick="handlePointClick('https://benditosea.github.io/360/Boulder.html')"><span class="point-label">Boulder</span></div><!--Boulder-->
-      <div class="point" style="top: 42%; left: 30%;" onclick="handlePointClick('https://benditosea.github.io/360/Ubicacion1.html')"></div><!--Ubicacion1-->
-      <div class="point" style="top: 68%; left: 12%;" onclick="handlePointClick('https://benditosea.github.io/360/Bosque.html')"><span class="point-label">Bosque</span></div></div><!--Bosque-->
+  <section class="location" id="location">
+    <h2>Ubicación: Choachí, Vereda Aguadulce</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.938319641682!2d-73.9744122!3d4.5640798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9637e7c4fc5b%3A0x242b049c71ce788f!2sChoach%C3%AD%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1705567890123" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="map-section">
+    <h2>Mapa del sector</h2>
+    <div id="map-container">
+      <div id="map"><!--Puntos en el mapa-->
+        <div class="point" style="top: 3%; left: 78%;" onclick="handlePointClick('https://benditosea.github.io/360/Entrada.html')"><span class="point-label">Entrada</span></div><!--Entrada-->
+        <div class="point" style="top: 47%; left: 46%;" onclick="handlePointClick('https://benditosea.github.io/360/Camping.html')"><span class="point-label">Baño</span></div><!--Baño-->
+        <div class="point" style="top: 53%; left: 43%;" onclick="handlePointClick('https://benditosea.github.io/360/Camping.html')"><span class="point-label">Camping</span></div><!--Camping-->
+        <div class="point" style="top: 86%; left: 22%;" onclick="handlePointClick('https://benditosea.github.io/360/Muro.html')"><span class="point-label">Muro Bendito sea</span></div><!--Bendito sea-->
+        <div class="point" style="top: 65%; left: 49%;" onclick="handlePointClick('https://benditosea.github.io/360/Boulder.html')"><span class="point-label">Boulder</span></div><!--Boulder-->
+        <div class="point" style="top: 42%; left: 30%;" onclick="handlePointClick('https://benditosea.github.io/360/Ubicacion1.html')"></div><!--Ubicacion1-->
+        <div class="point" style="top: 68%; left: 12%;" onclick="handlePointClick('https://benditosea.github.io/360/Bosque.html')"><span class="point-label">Bosque</span></div></div><!--Bosque-->
+      </div>
+    
+      <div id="modal"><!--Ventana emergente-->
+        <button onclick="closeModal()">X</button>
+        <iframe id="modal-iframe" src=""></iframe>
+      </div>
     </div>
+  </section>
   
-    <div id="modal"><!--Ventana emergente-->
-      <button onclick="closeModal()">X</button>
-      <iframe id="modal-iframe" src=""></iframe>
-    </div>
-  </div>
 
   <iframe
     src="pagina-en-construccion.html" 

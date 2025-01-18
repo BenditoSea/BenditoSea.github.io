@@ -111,7 +111,7 @@ header{
     background-image: url('');
 }
 .head-img4{/*Header ubicacion*/
-    background-image: url('');
+    background-image: url('https://benditosea.github.io/Img/Galeria/Img33.jpg');
 }
 
 .head-text{
@@ -176,7 +176,7 @@ header p{
     margin-bottom: 30px;
 }
 
-#contact,#boulder,#cost,#servicios-camping,#faq-camping{
+#contact,#boulder,#cost,#servicios-camping,#faq-camping, #map-section{
     padding: 50px 20px;
     text-align: center;
     background-color: #e9e9e9;
