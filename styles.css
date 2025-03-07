@@ -498,3 +498,8 @@ tr:hover{
     display: inline-block; /* Permite que la lista respete la alineación centrada */
     text-align: left; /* Alinea los ítems a la izquierda */
 }
+
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color del texto del contenedor */
+}
