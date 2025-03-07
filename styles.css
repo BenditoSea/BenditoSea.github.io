@@ -59,6 +59,11 @@ h3{
     text-align: center;
 }
 
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color del texto del contenedor */
+}
+
 /*Menu*/
 .navbar{
     position: fixed;
@@ -443,8 +448,7 @@ tr:hover{
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/*Ventana emergente*/
-#modal {
+#modal {/*Ventana emergente del mapa*/
     position: fixed;
     top: 50%;
     left: 50%;
@@ -477,9 +481,10 @@ tr:hover{
     cursor: pointer;
 }
 
+/*Camping*/
 #camping-container {
     margin: 0 auto;
-    text-align: center; /* Centra todos los textos dentro del contenedor */
+    text-align: center;
 }
 
 .camping-info {
@@ -488,17 +493,12 @@ tr:hover{
 }
 
 .camping-detalle {
-    text-align: center; /* Mantiene los títulos y textos centrados */
+    text-align: center;
 }
 
 .camping-detalle ul {
-    list-style-type: disc; /* Mantiene los puntos de la lista */
-    padding-left: 20px; /* Añade sangría para los puntos */
-    display: inline-block; /* Permite que la lista respete la alineación centrada */
-    text-align: left; /* Alinea los ítems a la izquierda */
-}
-
-a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Usa el color del texto del contenedor */
+    list-style-type: disc; 
+    padding-left: 20px; 
+    display: inline-block; 
+    text-align: left;
 }
