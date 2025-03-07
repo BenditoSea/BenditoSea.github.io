@@ -7,10 +7,14 @@
         width: 100%; /* Asegúrate de que ocupe el ancho completo */
         padding: 0; /* Elimina el padding si es necesario */
     }
+
     .service {
         text-align: center;
         width: 90%; /* Cambia el ancho según sea necesario */
         margin: 20px 0; /* Ajusta el margen vertical */
+    }
+    .ca-left{
+        width: 80%;
     }
 }
 
@@ -25,6 +29,9 @@
     .service {
         text-align: center;
         width: 30%; /* Ajusta el ancho según sea necesario */
+    }
+    .ca-left{
+        width: 25%;
     }
 }
 
@@ -76,15 +83,18 @@ a {
     backdrop-filter: blur(10px); 
     z-index: 3;
 }
+
 .navbar ul{
     display: flex;
     list-style: none;
     padding: 0%;
     z-index: 3;
 }
+
 .navbar li{
     margin: 0 15px;
 }
+
 .navbar a{
     color: #fff;
     text-decoration: none;
@@ -94,6 +104,7 @@ a {
     padding: 0 2.5em;
     transition: .4s;
 }
+
 nav a:hover{
     background: rgba(0, 0, 0, 0.5);
 }
@@ -501,4 +512,52 @@ tr:hover{
     padding-left: 20px; 
     display: inline-block; 
     text-align: left;
+}
+
+/*Actividades*/
+.container-actividades {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    padding: 30px 50px 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+}
+
+.box { /*contenedor interno*/
+    width: 100%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.ca-left {/*Contenedor izquierdo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.ca-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.right {/*Contenedor derecho*/
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    flex-direction: column;
+}
+.right h2,
+.right p {
+    display: block;
+    margin-bottom: 10px;
 }
