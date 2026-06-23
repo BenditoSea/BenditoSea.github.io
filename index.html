@@ -8,6 +8,23 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
+        <!-- Aviso nueva página -->
+        <div id="aviso-overlay">
+            <div id="aviso-modal">
+                <span class="aviso-icono">🏕️</span>
+                <h2>¡Nos hemos renovado!</h2>
+                <p>
+                    Nuestra empresa ha evolucionado y ahora contamos con una nueva página web
+                    con toda la información actualizada sobre nuestros servicios y actividades.<br><br>
+                    Encuéntranos en: <span class="aviso-url">elhigueron.xyz</span>
+                </p>
+                <a href="https://elhigueron.xyz" class="aviso-btn-ir">Ir a la nueva página</a>
+                <button class="aviso-btn-cerrar" onclick="document.getElementById('aviso-overlay').style.display='none'">
+                    Continuar en esta página
+                </button>
+            </div>
+        </div>
+
          <header class="head-img">
             <nav class="navbar">
                 <ul>
